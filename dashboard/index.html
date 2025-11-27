@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Control: Semana Crítica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>🚀 Panel de Control</h1>
+                <p class="subtitle">Objetivo: Dominar la Semana Crítica</p>
+            </div>
+            <div class="main-timer-card">
+                <h3>Próximo Hito Crítico</h3>
+                <div id="countdown-display" class="countdown">00:00:00</div>
+                <p id="next-event-name">Cargando...</p>
+            </div>
+        </header>
+
+        <main class="grid">
+            <!-- Tesis Card -->
+            <div class="card thesis-card">
+                <div class="card-header">
+                    <div class="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h2>Tesis & Sustentación</h2>
+                    <span class="badge critical">Prioridad Máxima</span>
+                </div>
+                <div class="card-body">
+                    <div class="timeline">
+                        <div class="event">
+                            <span class="time">Jue 27, 12:00 PM</span>
+                            <span class="desc">Reunión Director</span>
+                        </div>
+                        <div class="event">
+                            <span class="time">Vie 28</span>
+                            <span class="desc">Entrega Firmas (DEADLINE)</span>
+                        </div>
+                        <div class="event">
+                            <span class="time">Lun 01</span>
+                            <span class="desc">Sustentación</span>
+                        </div>
+                    </div>
+
+                    <div class="task-list">
+                        <h4>Tareas Urgentes</h4>
+                        <label class="task-item">
+                            <input type="checkbox" id="tesis-1">
+                            <span class="checkmark"></span>
+                            <span class="text">Encuesta "Trigutor IA" (Profesores)</span>
+                        </label>
+                        <label class="task-item">
+                            <input type="checkbox" id="tesis-2">
+                            <span class="checkmark"></span>
+                            <span class="text">Procesar datos recolectados</span>
+                        </label>
+                        <label class="task-item">
+                            <input type="checkbox" id="tesis-3">
+                            <span class="checkmark"></span>
+                            <span class="text">Conseguir firmas tribunal</span>
+                        </label>
+
+                        <h4>Preparación</h4>
+                        <label class="task-item">
+                            <input type="checkbox" id="tesis-4">
+                            <span class="checkmark"></span>
+                            <span class="text">Diseñar Diapositivas</span>
+                        </label>
+                        <label class="task-item">
+                            <input type="checkbox" id="tesis-5">
+                            <span class="checkmark"></span>
+                            <span class="text">Empastado y CD</span>
+                        </label>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-tesis" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Robotica Card -->
+            <div class="card robotics-card">
+                <div class="card-header">
+                    <div class="icon-box"><i class="fa-solid fa-robot"></i></div>
+                    <h2>Clase Robótica</h2>
+                    <span class="badge upcoming">Jueves 27</span>
+                </div>
+                <div class="card-body">
+                    <div class="event-highlight">
+                        <i class="fa-regular fa-clock"></i> 3:00 PM - 6:00 PM
+                    </div>
+                    <p class="objective">Objetivo: Armado de Robots</p>
+
+                    <div class="task-list">
+                        <label class="task-item">
+                            <input type="checkbox" id="robo-1">
+                            <span class="checkmark"></span>
+                            <span class="text">Preparar Kits y Materiales</span>
+                        </label>
+                        <label class="task-item">
+                            <input type="checkbox" id="robo-2">
+                            <span class="checkmark"></span>
+                            <span class="text">Repasar Guía de Armado</span>
+                        </label>
+                        <label class="task-item">
+                            <input type="checkbox" id="robo-3">
+                            <span class="checkmark"></span>
+                            <span class="text">Estar listo a las 3:00 PM</span>
+                        </label>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-robo" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fuxion Card -->
+            <div class="card fuxion-card">
+                <div class="card-header">
+                    <div class="icon-box"><i class="fa-solid fa-leaf"></i></div>
+                    <h2>Stand Fuxion</h2>
+                    <span class="badge weekend">Domingo 30</span>
+                </div>
+                <div class="card-body">
+                    <p class="objective">Presentación de Negocio & Detox</p>
+
+                    <div class="task-list">
+                        <h4>Material</h4>
+                        <label class="task-item">
+                            <input type="checkbox" id="fux-1">
+                            <span class="checkmark"></span>
+                            <span class="text">Diseñar Invitación Negocio</span>
+                        </label>
+                        <label class="task-item">
+                            <input type="checkbox" id="fux-2">
+                            <span class="checkmark"></span>
+                            <span class="text">Imprimir Invitaciones</span>
+                        </label>
+
+                        <h4>Demo & Pitch</h4>
+                        <label class="task-item">
+                            <input type="checkbox" id="fux-3">
+                            <span class="checkmark"></span>
+                            <span class="text">Estudiar Pitch de Venta</span>
+                        </label>
+                        <label class="task-item">
+                            <input type="checkbox" id="fux-4">
+                            <span class="checkmark"></span>
+                            <span class="text">Prep. Instrumental Prunex (Noche)</span>
+                        </label>
+                        <label class="task-item">
+                            <input type="checkbox" id="fux-5">
+                            <span class="checkmark"></span>
+                            <span class="text">Prep. Instrumental Flora Liv (Día)</span>
+                        </label>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-fux" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
