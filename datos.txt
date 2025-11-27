@@ -197,3 +197,58 @@ Firebase Hosting es compatible con varios sitios
 Puedes asociar varios sitios a un proyecto de Firebase. Cada uno de ellos aloja sus propios recursos estáticos únicos, pero los comparte con otros sitios en el mismo proyecto de Firebase.
 Beta
 Actualmente, esta función (Hosting Channels) se encuentra en fase beta
+Skip to content
+Navigation Menu
+miyashiromc
+actividades
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Owner avatar
+actividades
+Public
+Start coding with Codespaces
+Add a README file and start coding in a secure, configurable, and dedicated development environment.
+
+Add collaborators to this repository
+Search for people using their GitHub username or email address.
+
+Quick setup — if you’ve done this kind of thing before
+or	
+https://github.com/miyashiromc/actividades.git
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+
+…or create a new repository on the command line
+echo "# actividades" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/miyashiromc/actividades.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/miyashiromc/actividades.git
+git branch -M main
+git push -u origin main
+ ProTip! Use the URL for this page when adding GitHub as a remote.
+Footer
+© 2025 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+miyashiromc/actividades
